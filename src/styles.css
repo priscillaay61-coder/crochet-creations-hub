@@ -60,9 +60,15 @@
   --color-sage: var(--sage);
   --color-warm-brown: var(--warm-brown);
   --color-warm-beige: var(--warm-beige);
+  --color-blush: var(--blush);
+  --color-blush-foreground: var(--blush-foreground);
+  --color-sand: var(--sand);
+  --color-ink: var(--ink);
+  --color-bronze: var(--bronze);
 
   --font-heading: var(--font-heading);
   --font-body: var(--font-body);
+  --font-mono: var(--font-mono);
 }
 
 :root {
