@@ -149,6 +149,11 @@
   --terracotta: oklch(0.72 0.11 65);
   --sage: oklch(0.55 0.08 125);
   --warm-brown: oklch(0.85 0.06 55);
+  --blush: oklch(0.4 0.05 20);
+  --blush-foreground: oklch(0.95 0.02 30);
+  --sand: oklch(0.45 0.03 70);
+  --ink: oklch(0.96 0.015 80);
+  --bronze: oklch(0.75 0.08 65);
   --warm-beige: oklch(0.4 0.045 45);
 
   --chart-1: oklch(0.72 0.11 65);
