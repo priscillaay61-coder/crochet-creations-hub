@@ -25,6 +25,30 @@ export const Route = createFileRoute("/portfolio")({
 
 const portfolioItems = [
   {
+    title: "Scarlet Ruffle Bralette",
+    category: "Wearables",
+    image: redBraletteAsset.url,
+    alt: "Deep red crochet ruffle bralette top with scalloped edges on linen",
+  },
+  {
+    title: "Sand Lace Crop Sweater",
+    category: "Wearables",
+    image: sandSweaterAsset.url,
+    alt: "Sand-coloured open lace crochet crop sweater styled with trailing greenery",
+  },
+  {
+    title: "Granny Square Two-Piece",
+    category: "Wearables",
+    image: grannySetAsset.url,
+    alt: "Earth-toned granny square crochet top and skirt set with a cream handbag",
+  },
+  {
+    title: "Violet Granny Shawl",
+    category: "Home",
+    image: purpleShawlAsset.url,
+    alt: "Purple and pink granny square crochet shawl with fringed edges",
+  },
+  {
     title: "Granny Square Tote",
     category: "Bags",
     image: toteImage,
