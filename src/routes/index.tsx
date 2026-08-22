@@ -13,6 +13,10 @@ import redBraletteAsset from "../assets/red-bralette.png.asset.json";
 import sandSweaterAsset from "../assets/sand-crop-sweater.png.asset.json";
 import grannySetAsset from "../assets/granny-square-set.png.asset.json";
 import purpleShawlAsset from "../assets/purple-granny-shawl.png.asset.json";
+import cocoaBikiniAsset from "../assets/cocoa-bikini-set.png.asset.json";
+import crimsonHalterAsset from "../assets/crimson-halter-top.png.asset.json";
+import redShortsAsset from "../assets/red-shorts-set.jpg.asset.json";
+import redBlanketAsset from "../assets/red-scallop-blanket.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
