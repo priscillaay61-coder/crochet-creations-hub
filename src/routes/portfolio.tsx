@@ -10,6 +10,11 @@ import redBraletteAsset from "../assets/red-bralette.png.asset.json";
 import sandSweaterAsset from "../assets/sand-crop-sweater.png.asset.json";
 import grannySetAsset from "../assets/granny-square-set.png.asset.json";
 import purpleShawlAsset from "../assets/purple-granny-shawl.png.asset.json";
+import cocoaBikiniAsset from "../assets/cocoa-bikini-set.png.asset.json";
+import redBlanketAsset from "../assets/red-scallop-blanket.png.asset.json";
+import redShortsAsset from "../assets/red-shorts-set.jpg.asset.json";
+import cocoaBraletteAsset from "../assets/cocoa-scallop-bralette.jpg.asset.json";
+import crimsonHalterAsset from "../assets/crimson-halter-top.png.asset.json";
 
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
@@ -47,6 +52,36 @@ const portfolioItems = [
     category: "Home",
     image: purpleShawlAsset.url,
     alt: "Purple and pink granny square crochet shawl with fringed edges",
+  },
+  {
+    title: "Cocoa Scallop Bikini Set",
+    category: "Wearables",
+    image: cocoaBikiniAsset.url,
+    alt: "Cocoa brown crochet scalloped bikini set beside a cream mesh cover-up",
+  },
+  {
+    title: "Cocoa Scallop Bralette",
+    category: "Wearables",
+    image: cocoaBraletteAsset.url,
+    alt: "Brown crochet scalloped bralette flat-lay with gold hoops and a butterfly clip",
+  },
+  {
+    title: "Crimson Halter Top",
+    category: "Wearables",
+    image: crimsonHalterAsset.url,
+    alt: "Deep red crochet halter top with picot trim in warm sunlight",
+  },
+  {
+    title: "Ruby Shorts Set",
+    category: "Wearables",
+    image: redShortsAsset.url,
+    alt: "Red crochet shorts and top set with tassel ties and a crochet hook",
+  },
+  {
+    title: "Ruby Scallop Blanket",
+    category: "Home",
+    image: redBlanketAsset.url,
+    alt: "Close-up of a red crochet blanket with scalloped edging and tassel",
   },
   {
     title: "Granny Square Tote",
