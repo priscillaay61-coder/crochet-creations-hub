@@ -13,6 +13,10 @@ import redBraletteAsset from "../assets/red-bralette.png.asset.json";
 import sandSweaterAsset from "../assets/sand-crop-sweater.png.asset.json";
 import grannySetAsset from "../assets/granny-square-set.png.asset.json";
 import purpleShawlAsset from "../assets/purple-granny-shawl.png.asset.json";
+import cocoaBikiniAsset from "../assets/cocoa-bikini-set.png.asset.json";
+import crimsonHalterAsset from "../assets/crimson-halter-top.png.asset.json";
+import redShortsAsset from "../assets/red-shorts-set.jpg.asset.json";
+import redBlanketAsset from "../assets/red-scallop-blanket.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -40,6 +44,10 @@ const newArrivals = [
   { title: "Sand Lace Crop Sweater", category: "Wearables", price: "$165", image: sandSweaterAsset.url, alt: "Sand-coloured open lace crochet crop sweater styled with trailing greenery" },
   { title: "Granny Square Two-Piece", category: "Wearables", price: "$210", image: grannySetAsset.url, alt: "Earth-toned granny square crochet top and skirt set with a cream handbag" },
   { title: "Violet Granny Shawl", category: "Home", price: "$140", image: purpleShawlAsset.url, alt: "Purple and pink granny square crochet shawl with fringed edges" },
+  { title: "Cocoa Scallop Bikini Set", category: "Wearables", price: "$120", image: cocoaBikiniAsset.url, alt: "Cocoa brown crochet scalloped bikini set beside a cream mesh cover-up" },
+  { title: "Crimson Halter Top", category: "Wearables", price: "$95", image: crimsonHalterAsset.url, alt: "Deep red crochet halter top with picot trim in warm sunlight" },
+  { title: "Ruby Shorts Set", category: "Wearables", price: "$185", image: redShortsAsset.url, alt: "Red crochet shorts and top set with tassel ties and a crochet hook" },
+  { title: "Ruby Scallop Blanket", category: "Home", price: "$220", image: redBlanketAsset.url, alt: "Close-up of a red crochet blanket with scalloped edging and tassel" },
 ];
 
 function HomePage() {
