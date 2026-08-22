@@ -6,6 +6,10 @@ import blanketImage from "../assets/portfolio-blanket.jpg";
 import marketBagImage from "../assets/portfolio-market-bag.jpg";
 import wearablesImage from "../assets/portfolio-wearables.jpg";
 import homeImage from "../assets/portfolio-home.jpg";
+import redBraletteAsset from "../assets/red-bralette.png.asset.json";
+import sandSweaterAsset from "../assets/sand-crop-sweater.png.asset.json";
+import grannySetAsset from "../assets/granny-square-set.png.asset.json";
+import purpleShawlAsset from "../assets/purple-granny-shawl.png.asset.json";
 
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
