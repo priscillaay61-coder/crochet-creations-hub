@@ -6,6 +6,10 @@ import blanketImage from "../assets/portfolio-blanket.jpg";
 import marketBagImage from "../assets/portfolio-market-bag.jpg";
 import wearablesImage from "../assets/portfolio-wearables.jpg";
 import homeImage from "../assets/portfolio-home.jpg";
+import redBraletteAsset from "../assets/red-bralette.png.asset.json";
+import sandSweaterAsset from "../assets/sand-crop-sweater.png.asset.json";
+import grannySetAsset from "../assets/granny-square-set.png.asset.json";
+import purpleShawlAsset from "../assets/purple-granny-shawl.png.asset.json";
 
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
@@ -20,6 +24,30 @@ export const Route = createFileRoute("/portfolio")({
 });
 
 const portfolioItems = [
+  {
+    title: "Scarlet Ruffle Bralette",
+    category: "Wearables",
+    image: redBraletteAsset.url,
+    alt: "Deep red crochet ruffle bralette top with scalloped edges on linen",
+  },
+  {
+    title: "Sand Lace Crop Sweater",
+    category: "Wearables",
+    image: sandSweaterAsset.url,
+    alt: "Sand-coloured open lace crochet crop sweater styled with trailing greenery",
+  },
+  {
+    title: "Granny Square Two-Piece",
+    category: "Wearables",
+    image: grannySetAsset.url,
+    alt: "Earth-toned granny square crochet top and skirt set with a cream handbag",
+  },
+  {
+    title: "Violet Granny Shawl",
+    category: "Home",
+    image: purpleShawlAsset.url,
+    alt: "Purple and pink granny square crochet shawl with fringed edges",
+  },
   {
     title: "Granny Square Tote",
     category: "Bags",

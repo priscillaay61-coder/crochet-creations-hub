@@ -9,6 +9,10 @@ import cardiganImage from "../assets/portfolio-cardigan.jpg";
 import marketBagImage from "../assets/portfolio-market-bag.jpg";
 import homeImage from "../assets/portfolio-home.jpg";
 import aboutHandsImage from "../assets/about-hands.jpg";
+import redBraletteAsset from "../assets/red-bralette.png.asset.json";
+import sandSweaterAsset from "../assets/sand-crop-sweater.png.asset.json";
+import grannySetAsset from "../assets/granny-square-set.png.asset.json";
+import purpleShawlAsset from "../assets/purple-granny-shawl.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -32,10 +36,10 @@ const categories = [
 ];
 
 const newArrivals = [
-  { title: "Granny Square Tote", category: "Bags", price: "$88", image: toteImage, alt: "Crochet granny square tote bag in cream and terracotta yarn" },
-  { title: "Oatmeal Chunky Cardigan", category: "Wearables", price: "$240", image: cardiganImage, alt: "Chunky oatmeal crochet cardigan on a vintage wooden chair" },
-  { title: "Sage Baby Blanket", category: "Home", price: "$135", image: blanketImage, alt: "Sage green and cream handmade crochet baby blanket" },
-  { title: "Chestnut Winter Set", category: "Accessories", price: "$96", image: wearablesImage, alt: "Chestnut brown crochet beanie and scarf set" },
+  { title: "Scarlet Ruffle Bralette", category: "Wearables", price: "$78", image: redBraletteAsset.url, alt: "Deep red crochet ruffle bralette top with scalloped edges on linen" },
+  { title: "Sand Lace Crop Sweater", category: "Wearables", price: "$165", image: sandSweaterAsset.url, alt: "Sand-coloured open lace crochet crop sweater styled with trailing greenery" },
+  { title: "Granny Square Two-Piece", category: "Wearables", price: "$210", image: grannySetAsset.url, alt: "Earth-toned granny square crochet top and skirt set with a cream handbag" },
+  { title: "Violet Granny Shawl", category: "Home", price: "$140", image: purpleShawlAsset.url, alt: "Purple and pink granny square crochet shawl with fringed edges" },
 ];
 
 function HomePage() {
