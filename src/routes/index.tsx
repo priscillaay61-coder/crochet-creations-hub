@@ -9,6 +9,10 @@ import cardiganImage from "../assets/portfolio-cardigan.jpg";
 import marketBagImage from "../assets/portfolio-market-bag.jpg";
 import homeImage from "../assets/portfolio-home.jpg";
 import aboutHandsImage from "../assets/about-hands.jpg";
+import redBraletteAsset from "../assets/red-bralette.png.asset.json";
+import sandSweaterAsset from "../assets/sand-crop-sweater.png.asset.json";
+import grannySetAsset from "../assets/granny-square-set.png.asset.json";
+import purpleShawlAsset from "../assets/purple-granny-shawl.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
