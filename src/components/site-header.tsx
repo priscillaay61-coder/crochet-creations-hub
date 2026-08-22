@@ -58,7 +58,7 @@ export function SiteHeader() {
           {/* Logo */}
           <Link to="/" className="justify-self-center">
             <span className="font-heading text-2xl font-black uppercase tracking-[0.18em] text-foreground">
-              Cozy Stitches
+              Twiggs Stitches
             </span>
           </Link>
 

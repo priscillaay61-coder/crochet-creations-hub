@@ -13,9 +13,9 @@ import aboutHandsImage from "../assets/about-hands.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Cozy Stitches — Handmade Crochet Portfolio" },
+      { title: "Twiggs Stitches — Handmade Crochet Portfolio" },
       { name: "description", content: "Discover cozy, handmade crochet pieces and patterns from a modern cottage studio." },
-      { property: "og:title", content: "Cozy Stitches — Handmade Crochet Portfolio" },
+      { property: "og:title", content: "Twiggs Stitches — Handmade Crochet Portfolio" },
       { property: "og:description", content: "Discover cozy, handmade crochet pieces and patterns from a modern cottage studio." },
     ],
   }),

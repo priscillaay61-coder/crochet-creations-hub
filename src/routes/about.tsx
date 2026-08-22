@@ -5,10 +5,10 @@ import aboutHandsImage from "../assets/about-hands.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Cozy Stitches" },
-      { name: "description", content: "Meet the maker behind Cozy Stitches and learn about the slow, intentional crochet process." },
-      { property: "og:title", content: "About — Cozy Stitches" },
-      { property: "og:description", content: "Meet the maker behind Cozy Stitches and learn about the slow, intentional crochet process." },
+      { title: "About — Twiggs Stitches" },
+      { name: "description", content: "Meet the maker behind Twiggs Stitches and learn about the slow, intentional crochet process." },
+      { property: "og:title", content: "About — Twiggs Stitches" },
+      { property: "og:description", content: "Meet the maker behind Twiggs Stitches and learn about the slow, intentional crochet process." },
     ],
   }),
   component: AboutPage,
@@ -22,7 +22,7 @@ function AboutPage() {
           <p className="text-sm font-medium uppercase tracking-widest text-primary">The maker</p>
           <h1 className="mt-2 font-heading text-4xl text-foreground sm:text-5xl">Hi, I&apos;m Elara.</h1>
           <p className="mt-6 text-lg text-muted-foreground">
-            I started Cozy Stitches from a small sunlit corner of my cottage, surrounded by yarn, tea, and half-finished blankets. What began as a quiet hobby has grown into a practice of creating slow, thoughtful pieces for everyday life.
+            I started Twiggs Stitches from a small sunlit corner of my cottage, surrounded by yarn, tea, and half-finished blankets. What began as a quiet hobby has grown into a practice of creating slow, thoughtful pieces for everyday life.
           </p>
           <p className="mt-4 text-lg text-muted-foreground">
             I work primarily with cotton, wool, and linen blends in earthy, muted palettes. My designs are inspired by the seasons, old textiles, and the comforting weight of something made by hand.

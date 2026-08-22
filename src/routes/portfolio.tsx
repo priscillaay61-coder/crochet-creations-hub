@@ -10,10 +10,10 @@ import homeImage from "../assets/portfolio-home.jpg";
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
     meta: [
-      { title: "Portfolio — Cozy Stitches" },
-      { name: "description", content: "Browse handmade crochet blankets, bags, wearables, and home goods from Cozy Stitches." },
-      { property: "og:title", content: "Portfolio — Cozy Stitches" },
-      { property: "og:description", content: "Browse handmade crochet blankets, bags, wearables, and home goods from Cozy Stitches." },
+      { title: "Portfolio — Twiggs Stitches" },
+      { name: "description", content: "Browse handmade crochet blankets, bags, wearables, and home goods from Twiggs Stitches." },
+      { property: "og:title", content: "Portfolio — Twiggs Stitches" },
+      { property: "og:description", content: "Browse handmade crochet blankets, bags, wearables, and home goods from Twiggs Stitches." },
     ],
   }),
   component: PortfolioPage,
