@@ -1,11 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-import toteImage from "../assets/portfolio-tote.jpg";
-import cardiganImage from "../assets/portfolio-cardigan.jpg";
-import blanketImage from "../assets/portfolio-blanket.jpg";
-import marketBagImage from "../assets/portfolio-market-bag.jpg";
-import wearablesImage from "../assets/portfolio-wearables.jpg";
-import homeImage from "../assets/portfolio-home.jpg";
 import redBraletteAsset from "../assets/red-bralette.png.asset.json";
 import sandSweaterAsset from "../assets/sand-crop-sweater.png.asset.json";
 import grannySetAsset from "../assets/granny-square-set.png.asset.json";
@@ -82,42 +76,6 @@ const portfolioItems = [
     category: "Home",
     image: redBlanketAsset.url,
     alt: "Close-up of a red crochet blanket with scalloped edging and tassel",
-  },
-  {
-    title: "Granny Square Tote",
-    category: "Bags",
-    image: toteImage,
-    alt: "Crochet granny square tote bag in cream and terracotta yarn",
-  },
-  {
-    title: "Oatmeal Chunky Cardigan",
-    category: "Wearables",
-    image: cardiganImage,
-    alt: "Chunky oatmeal crochet cardigan on a vintage wooden chair",
-  },
-  {
-    title: "Sage Baby Blanket",
-    category: "Home",
-    image: blanketImage,
-    alt: "Sage green and cream handmade crochet baby blanket",
-  },
-  {
-    title: "Cotton Market Bag",
-    category: "Bags",
-    image: marketBagImage,
-    alt: "Cream cotton crochet market bag filled with dried flowers",
-  },
-  {
-    title: "Chestnut Winter Set",
-    category: "Wearables",
-    image: wearablesImage,
-    alt: "Chestnut brown crochet beanie and scarf set",
-  },
-  {
-    title: "Mug Cozy & Coasters",
-    category: "Home",
-    image: homeImage,
-    alt: "Handmade crochet coasters and mug cozy on a rustic table",
   },
 ];
 
