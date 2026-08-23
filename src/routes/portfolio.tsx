@@ -43,7 +43,7 @@ const portfolioItems = [
   },
   {
     title: "Violet Granny Shawl",
-    category: "Home",
+    category: "Wearables",
     image: purpleShawlAsset.url,
     alt: "Purple and pink granny square crochet shawl with fringed edges",
   },
