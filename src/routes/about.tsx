@@ -60,7 +60,7 @@ function AboutPage() {
           <div className="overflow-hidden rounded-2xl bg-warm-beige shadow-xl">
             <img
               src={aboutHandsImage}
-              alt="A maker's hands crocheting with cream yarn and a wooden hook"
+              alt="An African maker's hands crocheting with cream yarn and a wooden hook"
               width={912}
               height={1104}
               className="h-auto w-full object-cover"

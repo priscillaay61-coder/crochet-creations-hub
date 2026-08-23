@@ -175,7 +175,7 @@ function HomePage() {
           <div className="aspect-[4/3] overflow-hidden lg:aspect-auto">
             <img
               src={aboutHandsImage}
-              alt="A maker's hands crocheting with cream yarn and a wooden hook"
+              alt="An African maker's hands crocheting with cream yarn and a wooden hook"
               width={912}
               height={1104}
               loading="lazy"
