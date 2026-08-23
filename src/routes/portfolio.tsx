@@ -36,7 +36,7 @@ const portfolioItems = [
     alt: "Sand-coloured open lace crochet crop sweater styled with trailing greenery",
   },
   {
-    title: "Granny Square Two-Piece",
+    title: "Chocomocha",
     category: "Wearables",
     image: grannySetAsset.url,
     alt: "Earth-toned granny square crochet top and skirt set with a cream handbag",

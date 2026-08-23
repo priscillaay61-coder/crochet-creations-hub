@@ -42,7 +42,7 @@ const categories = [
 const newArrivals = [
   { title: "Scarlet Ruffle Bralette", category: "Wearables", price: "$78", image: redBraletteAsset.url, alt: "Deep red crochet ruffle bralette top with scalloped edges on linen" },
   { title: "Sand Lace Crop Sweater", category: "Wearables", price: "$165", image: sandSweaterAsset.url, alt: "Sand-coloured open lace crochet crop sweater styled with trailing greenery" },
-  { title: "Granny Square Two-Piece", category: "Wearables", price: "$210", image: grannySetAsset.url, alt: "Earth-toned granny square crochet top and skirt set with a cream handbag" },
+  { title: "Chocomocha", category: "Wearables", price: "$210", image: grannySetAsset.url, alt: "Earth-toned granny square crochet top and skirt set with a cream handbag" },
   { title: "Violet Granny Shawl", category: "Home", price: "$140", image: purpleShawlAsset.url, alt: "Purple and pink granny square crochet shawl with fringed edges" },
   { title: "Cocoa Scallop Bikini Set", category: "Wearables", price: "$120", image: cocoaBikiniAsset.url, alt: "Cocoa brown crochet scalloped bikini set beside a cream mesh cover-up" },
   { title: "Crimson Halter Top", category: "Wearables", price: "$95", image: crimsonHalterAsset.url, alt: "Deep red crochet halter top with picot trim in warm sunlight" },
