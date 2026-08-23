@@ -77,7 +77,6 @@ const portfolioItems = [
     image: redBlanketAsset.url,
     alt: "Close-up of a red crochet blanket with scalloped edging and tassel",
   },
-  },
 ];
 
 function PortfolioPage() {
