@@ -44,6 +44,10 @@ const portfolioItems = [
     category: "Wearables",
     image: grannySetAsset.url,
     alt: "Earth-toned granny square crochet top and skirt set with a cream handbag",
+    slides: [
+      { src: grannySetAsset.url, alt: "Earth-toned granny square crochet top and skirt set with a cream handbag" },
+      { src: chocomochaWornAsset.url, alt: "Woman wearing the Chocomocha granny square crochet sweater with cream wide-leg trousers" },
+    ],
   },
   {
     title: "Violet Granny Shawl",
