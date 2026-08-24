@@ -87,6 +87,44 @@ const portfolioItems = [
   },
 ];
 
+function Slideshow({ slides }: { slides: { src: string; alt: string }[] }) {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => setIndex((i) => (i + 1) % slides.length), 3500);
+    return () => clearInterval(id);
+  }, [slides.length]);
+
+  return (
+    <div className="relative h-full w-full">
+      {slides.map((slide, i) => (
+        <img
+          key={slide.src}
+          src={slide.src}
+          alt={slide.alt}
+          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
+            i === index ? "opacity-100" : "opacity-0"
+          }`}
+          loading="lazy"
+        />
+      ))}
+      <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-2">
+        {slides.map((slide, i) => (
+          <button
+            key={slide.src}
+            type="button"
+            aria-label={`Show image ${i + 1}`}
+            onClick={() => setIndex(i)}
+            className={`h-1.5 w-6 rounded-full transition-colors ${
+              i === index ? "bg-background" : "bg-background/50"
+            }`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function PortfolioPage() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
