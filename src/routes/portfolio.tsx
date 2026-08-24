@@ -1,4 +1,8 @@
+import { useEffect, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+
+import chocomochaWornAsset from "../assets/chocomocha-worn.jpg.asset.json";
+
 
 import redBraletteAsset from "../assets/red-bralette.png.asset.json";
 import sandSweaterAsset from "../assets/sand-crop-sweater.png.asset.json";
