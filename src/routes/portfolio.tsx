@@ -142,15 +142,19 @@ function PortfolioPage() {
             key={item.title}
             className="group overflow-hidden rounded-xl bg-card shadow-sm transition-shadow hover:shadow-md"
           >
-            <div className="aspect-[4/5] overflow-hidden">
-              <img
-                src={item.image}
-                alt={item.alt}
-                width={800}
-                height={1008}
-                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                loading="lazy"
-              />
+            <div className="relative aspect-[4/5] overflow-hidden">
+              {"slides" in item && item.slides ? (
+                <Slideshow slides={item.slides} />
+              ) : (
+                <img
+                  src={item.image}
+                  alt={item.alt}
+                  width={800}
+                  height={1008}
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                />
+              )}
             </div>
             <div className="p-5">
               <p className="text-xs font-medium uppercase tracking-wider text-primary">{item.category}</p>
