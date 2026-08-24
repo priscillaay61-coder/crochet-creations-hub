@@ -1,4 +1,6 @@
+import { useEffect, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
 import redBraletteAsset from "../assets/red-bralette.png.asset.json";
 import sandSweaterAsset from "../assets/sand-crop-sweater.png.asset.json";
@@ -9,6 +11,7 @@ import redBlanketAsset from "../assets/red-scallop-blanket.png.asset.json";
 import redShortsAsset from "../assets/red-shorts-set.jpg.asset.json";
 import cocoaBraletteAsset from "../assets/cocoa-scallop-bralette.jpg.asset.json";
 import crimsonHalterAsset from "../assets/crimson-halter-top.png.asset.json";
+import wornChocomochaAsset from "../assets/worn-chocomocha-2.jpg.asset.json";
 
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
@@ -22,7 +25,15 @@ export const Route = createFileRoute("/portfolio")({
   component: PortfolioPage,
 });
 
-const portfolioItems = [
+type PortfolioItem = {
+  title: string;
+  category: string;
+  image: string;
+  alt: string;
+  gallery?: { src: string; alt: string }[];
+};
+
+const portfolioItems: PortfolioItem[] = [
   {
     title: "Scarlet Ruffle Bralette",
     category: "Wearables",
@@ -40,6 +51,16 @@ const portfolioItems = [
     category: "Wearables",
     image: grannySetAsset.url,
     alt: "Earth-toned granny square crochet top and skirt set with a cream handbag",
+    gallery: [
+      {
+        src: grannySetAsset.url,
+        alt: "Earth-toned granny square crochet top and skirt set with a cream handbag",
+      },
+      {
+        src: wornChocomochaAsset.url,
+        alt: "Chocomocha granny square crochet sweater worn with cream wide-leg trousers",
+      },
+    ],
   },
   {
     title: "Violet Granny Shawl",
@@ -80,6 +101,27 @@ const portfolioItems = [
 ];
 
 function PortfolioPage() {
+  const [activeItem, setActiveItem] = useState<PortfolioItem | null>(null);
+  const [slide, setSlide] = useState(0);
+
+  const slides = activeItem?.gallery ?? (activeItem ? [{ src: activeItem.image, alt: activeItem.alt }] : []);
+
+  useEffect(() => {
+    if (!activeItem) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setActiveItem(null);
+      if (e.key === "ArrowRight") setSlide((s) => (s + 1) % slides.length);
+      if (e.key === "ArrowLeft") setSlide((s) => (s - 1 + slides.length) % slides.length);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [activeItem, slides.length]);
+
+  const open = (item: PortfolioItem) => {
+    setActiveItem(item);
+    setSlide(0);
+  };
+
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
       <div className="max-w-2xl">
@@ -96,23 +138,91 @@ function PortfolioPage() {
             key={item.title}
             className="group overflow-hidden rounded-xl bg-card shadow-sm transition-shadow hover:shadow-md"
           >
-            <div className="aspect-[4/5] overflow-hidden">
-              <img
-                src={item.image}
-                alt={item.alt}
-                width={800}
-                height={1008}
-                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                loading="lazy"
-              />
-            </div>
-            <div className="p-5">
-              <p className="text-xs font-medium uppercase tracking-wider text-primary">{item.category}</p>
-              <h2 className="mt-1 font-heading text-xl text-card-foreground">{item.title}</h2>
-            </div>
+            <button
+              type="button"
+              onClick={() => open(item)}
+              className="block w-full text-left"
+              aria-label={`View ${item.title} gallery`}
+            >
+              <div className="aspect-[4/5] overflow-hidden">
+                <img
+                  src={item.image}
+                  alt={item.alt}
+                  width={800}
+                  height={1008}
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                />
+              </div>
+              <div className="p-5">
+                <p className="text-xs font-medium uppercase tracking-wider text-primary">{item.category}</p>
+                <h2 className="mt-1 font-heading text-xl text-card-foreground">{item.title}</h2>
+              </div>
+            </button>
           </article>
         ))}
       </div>
+
+      {activeItem && slides.length > 0 && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-foreground/90 p-4"
+          role="dialog"
+          aria-modal="true"
+          aria-label={`${activeItem.title} gallery`}
+          onClick={() => setActiveItem(null)}
+        >
+          <div className="relative max-h-full w-full max-w-3xl" onClick={(e) => e.stopPropagation()}>
+            <button
+              type="button"
+              onClick={() => setActiveItem(null)}
+              className="absolute -top-10 right-0 text-background transition-opacity hover:opacity-70"
+              aria-label="Close gallery"
+            >
+              <X className="h-6 w-6" />
+            </button>
+
+            <div className="overflow-hidden rounded-xl bg-card">
+              <img
+                src={slides[slide].src}
+                alt={slides[slide].alt}
+                className="max-h-[75vh] w-full object-contain"
+              />
+              <div className="flex items-center justify-between gap-4 p-5">
+                <div>
+                  <p className="text-xs font-medium uppercase tracking-wider text-primary">{activeItem.category}</p>
+                  <h3 className="mt-1 font-heading text-xl text-card-foreground">{activeItem.title}</h3>
+                </div>
+                {slides.length > 1 && (
+                  <p className="text-xs uppercase tracking-wider text-muted-foreground">
+                    {slide + 1} / {slides.length}
+                  </p>
+                )}
+              </div>
+            </div>
+
+            {slides.length > 1 && (
+              <>
+                <button
+                  type="button"
+                  onClick={() => setSlide((s) => (s - 1 + slides.length) % slides.length)}
+                  className="absolute left-2 top-1/3 rounded-full bg-background/85 p-2 text-foreground shadow transition hover:bg-background"
+                  aria-label="Previous image"
+                >
+                  <ChevronLeft className="h-5 w-5" />
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setSlide((s) => (s + 1) % slides.length)}
+                  className="absolute right-2 top-1/3 rounded-full bg-background/85 p-2 text-foreground shadow transition hover:bg-background"
+                  aria-label="Next image"
+                >
+                  <ChevronRight className="h-5 w-5" />
+                </button>
+              </>
+            )}
+          </div>
+        </div>
+      )}
     </section>
   );
 }
