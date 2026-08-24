@@ -1,8 +1,4 @@
-import { useEffect, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
-
-import chocomochaWornAsset from "../assets/chocomocha-worn.jpg.asset.json";
-
 
 import redBraletteAsset from "../assets/red-bralette.png.asset.json";
 import sandSweaterAsset from "../assets/sand-crop-sweater.png.asset.json";
@@ -44,10 +40,6 @@ const portfolioItems = [
     category: "Wearables",
     image: grannySetAsset.url,
     alt: "Earth-toned granny square crochet top and skirt set with a cream handbag",
-    slides: [
-      { src: grannySetAsset.url, alt: "Earth-toned granny square crochet top and skirt set with a cream handbag" },
-      { src: chocomochaWornAsset.url, alt: "Woman wearing the Chocomocha granny square crochet sweater with cream wide-leg trousers" },
-    ],
   },
   {
     title: "Violet Granny Shawl",
@@ -87,44 +79,6 @@ const portfolioItems = [
   },
 ];
 
-function Slideshow({ slides }: { slides: { src: string; alt: string }[] }) {
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const id = setInterval(() => setIndex((i) => (i + 1) % slides.length), 3500);
-    return () => clearInterval(id);
-  }, [slides.length]);
-
-  return (
-    <div className="relative h-full w-full">
-      {slides.map((slide, i) => (
-        <img
-          key={slide.src}
-          src={slide.src}
-          alt={slide.alt}
-          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
-            i === index ? "opacity-100" : "opacity-0"
-          }`}
-          loading="lazy"
-        />
-      ))}
-      <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-2">
-        {slides.map((slide, i) => (
-          <button
-            key={slide.src}
-            type="button"
-            aria-label={`Show image ${i + 1}`}
-            onClick={() => setIndex(i)}
-            className={`h-1.5 w-6 rounded-full transition-colors ${
-              i === index ? "bg-background" : "bg-background/50"
-            }`}
-          />
-        ))}
-      </div>
-    </div>
-  );
-}
-
 function PortfolioPage() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
@@ -142,19 +96,15 @@ function PortfolioPage() {
             key={item.title}
             className="group overflow-hidden rounded-xl bg-card shadow-sm transition-shadow hover:shadow-md"
           >
-            <div className="relative aspect-[4/5] overflow-hidden">
-              {"slides" in item && item.slides ? (
-                <Slideshow slides={item.slides} />
-              ) : (
-                <img
-                  src={item.image}
-                  alt={item.alt}
-                  width={800}
-                  height={1008}
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  loading="lazy"
-                />
-              )}
+            <div className="aspect-[4/5] overflow-hidden">
+              <img
+                src={item.image}
+                alt={item.alt}
+                width={800}
+                height={1008}
+                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+              />
             </div>
             <div className="p-5">
               <p className="text-xs font-medium uppercase tracking-wider text-primary">{item.category}</p>
