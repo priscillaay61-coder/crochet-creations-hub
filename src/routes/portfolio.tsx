@@ -183,8 +183,8 @@ function PortfolioPage() {
 
             <div className="overflow-hidden rounded-xl bg-card">
               <img
-                src={slides[slide].src}
-                alt={slides[slide].alt}
+                src={slides[slide]?.src}
+                alt={slides[slide]?.alt ?? activeItem.alt}
                 className="max-h-[75vh] w-full object-contain"
               />
               <div className="flex items-center justify-between gap-4 p-5">
