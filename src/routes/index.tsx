@@ -44,7 +44,7 @@ const categories = [
 const newArrivals = [
   { title: "Scarlet Ruffle Bralette", category: "Wearables", price: "$78", image: redBraletteAsset.url, alt: "Deep red crochet ruffle bralette top with scalloped edges on linen" },
   { title: "Sand Lace Crop Sweater", category: "Wearables", price: "$165", image: sandSweaterAsset.url, alt: "Sand-coloured open lace crochet crop sweater styled with trailing greenery" },
-  { title: "Chocomocha", category: "Wearables", price: "$210", image: grannySetAsset.url, alt: "Earth-toned granny square crochet top and skirt set with a cream handbag" },
+  { title: "Chocomocha", category: "Wearables", price: "$210", image: grannySetAsset.url, images: [grannySetAsset.url, chocomochaWornAsset.url], alt: "Earth-toned granny square crochet top and skirt set with a cream handbag" },
   { title: "Violet Granny Shawl", category: "Wearables", price: "$140", image: purpleShawlAsset.url, alt: "Purple and pink granny square crochet shawl with fringed edges" },
   { title: "Cocoa Scallop Bikini Set", category: "Wearables", price: "$120", image: cocoaBikiniAsset.url, alt: "Cocoa brown crochet scalloped bikini set beside a cream mesh cover-up" },
   { title: "Crimson Halter Top", category: "Wearables", price: "$95", image: crimsonHalterAsset.url, alt: "Deep red crochet halter top with picot trim in warm sunlight" },
@@ -148,13 +148,10 @@ function HomePage() {
           {newArrivals.map((item) => (
             <article key={item.title} className="group">
               <div className="aspect-[3/4] overflow-hidden bg-warm-beige">
-                <img
-                  src={item.image}
+                <ImageSlideshow
+                  images={item.images ?? [item.image]}
                   alt={item.alt}
-                  width={800}
-                  height={1066}
-                  loading="lazy"
-                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
               <div className="mt-4 flex items-start justify-between gap-4">
