@@ -9,6 +9,8 @@ import redBlanketAsset from "../assets/red-scallop-blanket.png.asset.json";
 import redShortsAsset from "../assets/red-shorts-set.jpg.asset.json";
 import cocoaBraletteAsset from "../assets/cocoa-scallop-bralette.jpg.asset.json";
 import crimsonHalterAsset from "../assets/crimson-halter-top.png.asset.json";
+import chocomochaWornAsset from "../assets/chocomocha-worn.jpg.asset.json";
+import { ImageSlideshow } from "@/components/image-slideshow";
 
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
@@ -39,6 +41,7 @@ const portfolioItems = [
     title: "Chocomocha",
     category: "Wearables",
     image: grannySetAsset.url,
+    images: [grannySetAsset.url, chocomochaWornAsset.url],
     alt: "Earth-toned granny square crochet top and skirt set with a cream handbag",
   },
   {
@@ -97,13 +100,10 @@ function PortfolioPage() {
             className="group overflow-hidden rounded-xl bg-card shadow-sm transition-shadow hover:shadow-md"
           >
             <div className="aspect-[4/5] overflow-hidden">
-              <img
-                src={item.image}
+              <ImageSlideshow
+                images={item.images ?? [item.image]}
                 alt={item.alt}
-                width={800}
-                height={1008}
-                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                loading="lazy"
+                className="transition-transform duration-500 group-hover:scale-105"
               />
             </div>
             <div className="p-5">
