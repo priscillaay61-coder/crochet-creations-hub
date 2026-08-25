@@ -17,6 +17,8 @@ import cocoaBikiniAsset from "../assets/cocoa-bikini-set.png.asset.json";
 import crimsonHalterAsset from "../assets/crimson-halter-top.png.asset.json";
 import redShortsAsset from "../assets/red-shorts-set.jpg.asset.json";
 import redBlanketAsset from "../assets/red-scallop-blanket.png.asset.json";
+import chocomochaWornAsset from "../assets/chocomocha-worn.jpg.asset.json";
+import { ImageSlideshow } from "@/components/image-slideshow";
 
 export const Route = createFileRoute("/")({
   head: () => ({
