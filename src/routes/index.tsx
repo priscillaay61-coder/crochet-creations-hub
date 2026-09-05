@@ -19,6 +19,7 @@ import crimsonHalterAsset from "../assets/crimson-halter-top.png.asset.json";
 import redShortsAsset from "../assets/red-shorts-set.jpg.asset.json";
 import redBlanketAsset from "../assets/red-scallop-blanket.png.asset.json";
 import chocomochaWornAsset from "../assets/chocomocha-worn.jpg.asset.json";
+import cocoaGrannyHalterAsset from "../assets/cocoa-granny-halter.png.asset.json";
 import { ImageSlideshow } from "@/components/image-slideshow";
 
 export const Route = createFileRoute("/")({
