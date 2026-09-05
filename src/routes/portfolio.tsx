@@ -77,6 +77,12 @@ const portfolioItems = [
     alt: "Red crochet shorts and top set with tassel ties and a crochet hook",
   },
   {
+    title: "Cocoa Granny Halter",
+    category: "Wearables",
+    image: cocoaGrannyHalterAsset.url,
+    alt: "Cocoa, beige and cream granny-stitch crochet halter top flat-lay with denim jeans and trailing greenery",
+  },
+  {
     title: "Ruby Scallop Blanket",
     category: "Home",
     image: redBlanketAsset.url,
