@@ -20,6 +20,8 @@ import redShortsAsset from "../assets/red-shorts-set.jpg.asset.json";
 import redBlanketAsset from "../assets/red-scallop-blanket.png.asset.json";
 import chocomochaWornAsset from "../assets/chocomocha-worn.jpg.asset.json";
 import cocoaGrannyHalterAsset from "../assets/cocoa-granny-halter.png.asset.json";
+import cocoaGrannyHalterWorn1Asset from "../assets/cocoa-granny-halter-worn-1.jpeg.asset.json";
+import cocoaGrannyHalterWorn2Asset from "../assets/cocoa-granny-halter-worn-2.jpeg.asset.json";
 import { ImageSlideshow } from "@/components/image-slideshow";
 
 export const Route = createFileRoute("/")({
@@ -51,7 +53,7 @@ const newArrivals = [
   { title: "Cocoa Scallop Bikini Set", category: "Wearables", price: "$120", image: cocoaBikiniAsset.url, alt: "Cocoa brown crochet scalloped bikini set beside a cream mesh cover-up" },
   { title: "Crimson Halter Top", category: "Wearables", price: "$95", image: crimsonHalterAsset.url, alt: "Deep red crochet halter top with picot trim in warm sunlight" },
   { title: "Ruby Shorts Set", category: "Wearables", price: "$185", image: redShortsAsset.url, alt: "Red crochet shorts and top set with tassel ties and a crochet hook" },
-  { title: "Cocoa Granny Halter", category: "Wearables", price: "$110", image: cocoaGrannyHalterAsset.url, alt: "Cocoa, beige and cream granny-stitch crochet halter top flat-lay with denim jeans and trailing greenery" },
+  { title: "Cocoa Granny Halter", category: "Wearables", price: "$110", image: cocoaGrannyHalterAsset.url, images: [cocoaGrannyHalterAsset.url, cocoaGrannyHalterWorn1Asset.url, cocoaGrannyHalterWorn2Asset.url], alt: "Cocoa, beige and cream granny-stitch crochet halter top flat-lay with denim jeans and trailing greenery" },
   { title: "Ruby Scallop Blanket", category: "Home", price: "$220", image: redBlanketAsset.url, alt: "Close-up of a red crochet blanket with scalloped edging and tassel" },
 ];
 
