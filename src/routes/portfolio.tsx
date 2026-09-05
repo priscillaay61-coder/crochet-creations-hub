@@ -17,10 +17,10 @@ import { ImageSlideshow } from "@/components/image-slideshow";
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
     meta: [
-      { title: "Portfolio — Twiggs Stitches" },
-      { name: "description", content: "Browse handmade crochet blankets, bags, wearables, and home goods from Twiggs Stitches." },
-      { property: "og:title", content: "Portfolio — Twiggs Stitches" },
-      { property: "og:description", content: "Browse handmade crochet blankets, bags, wearables, and home goods from Twiggs Stitches." },
+      { title: "Portfolio — Cozy Stitches Couture" },
+      { name: "description", content: "Browse handmade crochet blankets, bags, wearables, and home goods from Cozy Stitches Couture." },
+      { property: "og:title", content: "Portfolio — Cozy Stitches Couture" },
+      { property: "og:description", content: "Browse handmade crochet blankets, bags, wearables, and home goods from Cozy Stitches Couture." },
     ],
   }),
   component: PortfolioPage,

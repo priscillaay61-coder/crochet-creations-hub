@@ -27,7 +27,7 @@ export function SiteFooter() {
         <div className="grid gap-12 md:grid-cols-[1.5fr_1fr_1fr_1.5fr]">
           <div>
             <p className="font-heading text-2xl font-black uppercase tracking-[0.18em] text-foreground">
-              Twiggs Stitches
+              Cozy Stitches Couture
             </p>
             <p className="mt-4 max-w-xs text-sm text-muted-foreground">
               Handmade crochet with warmth and intention, made slowly in small batches.
@@ -62,7 +62,7 @@ export function SiteFooter() {
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="mailto:hello@twiggsstitches.example"
+                href="mailto:hello@cozystitchescouture.example"
                 className="text-foreground transition-opacity hover:opacity-60"
                 aria-label="Email"
               >
@@ -74,7 +74,7 @@ export function SiteFooter() {
 
         <div className="mt-14 flex flex-col items-center justify-between gap-3 border-t border-border pt-8 md:flex-row">
           <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-muted-foreground">
-            &copy; {currentYear} Twiggs Stitches
+            &copy; {currentYear} Cozy Stitches Couture
           </p>
           <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-muted-foreground">
             Free shipping over $200
