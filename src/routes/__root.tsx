@@ -78,14 +78,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Twiggs Stitches — Handmade Crochet" },
+      { title: "Cozy Stitches Couture — Handmade Crochet" },
       { name: "description", content: "A warm crochet portfolio showcasing handmade blankets, wearables, home goods, and patterns." },
-      { name: "author", content: "Twiggs Stitches" },
-      { property: "og:title", content: "Twiggs Stitches — Handmade Crochet" },
+      { name: "author", content: "Cozy Stitches Couture" },
+      { property: "og:title", content: "Cozy Stitches Couture — Handmade Crochet" },
       { property: "og:description", content: "A warm crochet portfolio showcasing handmade blankets, wearables, home goods, and patterns." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@twiggsstitches" },
+      { name: "twitter:site", content: "@cozystitchescouture" },
     ],
     links: [
       {
