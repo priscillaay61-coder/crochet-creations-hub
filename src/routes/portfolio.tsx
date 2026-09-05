@@ -82,6 +82,7 @@ const portfolioItems = [
     title: "Cocoa Granny Halter",
     category: "Wearables",
     image: cocoaGrannyHalterAsset.url,
+    images: [cocoaGrannyHalterAsset.url, cocoaGrannyHalterWorn1Asset.url, cocoaGrannyHalterWorn2Asset.url],
     alt: "Cocoa, beige and cream granny-stitch crochet halter top flat-lay with denim jeans and trailing greenery",
   },
   {
