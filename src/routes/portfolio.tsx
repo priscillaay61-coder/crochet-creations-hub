@@ -12,6 +12,8 @@ import cocoaBraletteAsset from "../assets/cocoa-scallop-bralette.jpg.asset.json"
 import crimsonHalterAsset from "../assets/crimson-halter-top.png.asset.json";
 import chocomochaWornAsset from "../assets/chocomocha-worn.jpg.asset.json";
 import cocoaGrannyHalterAsset from "../assets/cocoa-granny-halter.png.asset.json";
+import cocoaGrannyHalterWorn1Asset from "../assets/cocoa-granny-halter-worn-2.jpeg.asset.json";
+import cocoaGrannyHalterWorn2Asset from "../assets/cocoa-granny-halter-worn-1.jpeg.asset.json";
 import { ImageSlideshow } from "@/components/image-slideshow";
 
 export const Route = createFileRoute("/portfolio")({
