@@ -11,6 +11,7 @@ import redShortsAsset from "../assets/red-shorts-set.jpg.asset.json";
 import cocoaBraletteAsset from "../assets/cocoa-scallop-bralette.jpg.asset.json";
 import crimsonHalterAsset from "../assets/crimson-halter-top.png.asset.json";
 import chocomochaWornAsset from "../assets/chocomocha-worn.jpg.asset.json";
+import cocoaGrannyHalterAsset from "../assets/cocoa-granny-halter.png.asset.json";
 import { ImageSlideshow } from "@/components/image-slideshow";
 
 export const Route = createFileRoute("/portfolio")({
@@ -74,6 +75,12 @@ const portfolioItems = [
     category: "Wearables",
     image: redShortsAsset.url,
     alt: "Red crochet shorts and top set with tassel ties and a crochet hook",
+  },
+  {
+    title: "Cocoa Granny Halter",
+    category: "Wearables",
+    image: cocoaGrannyHalterAsset.url,
+    alt: "Cocoa, beige and cream granny-stitch crochet halter top flat-lay with denim jeans and trailing greenery",
   },
   {
     title: "Ruby Scallop Blanket",
