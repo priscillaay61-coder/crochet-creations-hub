@@ -11,6 +11,8 @@ import homeImage from "../assets/portfolio-home.jpg";
 import aboutHandsImage from "../assets/about-hands.jpg";
 import redBraletteAsset from "../assets/red-bralette.png.asset.json";
 import sandSweaterAsset from "../assets/sand-crop-sweater.png.asset.json";
+import sandFlatlayAsset from "../assets/sand-crop-flatlay.png.asset.json";
+import sandWornAsset from "../assets/sand-crop-worn.png.asset.json";
 import sandOpenworkSweaterAsset from "../assets/sand-openwork-sweater.png.asset.json";
 import grannySetAsset from "../assets/granny-square-set.png.asset.json";
 import purpleShawlAsset from "../assets/purple-granny-shawl.png.asset.json";
@@ -47,7 +49,7 @@ const categories = [
 
 const newArrivals = [
   { title: "Scarlet Ruffle Bralette", category: "Wearables", price: "$78", image: redBraletteAsset.url, alt: "Deep red crochet ruffle bralette top with scalloped edges on linen" },
-  { title: "Sand Lace Crop Sweater", category: "Wearables", price: "$165", image: sandSweaterAsset.url, alt: "Sand-coloured open lace crochet crop sweater styled with trailing greenery" },
+  { title: "Sand Lace Crop Sweater", category: "Wearables", price: "$165", image: sandSweaterAsset.url, images: [sandSweaterAsset.url, sandFlatlayAsset.url, sandWornAsset.url], alt: "Sand-coloured open lace crochet crop sweater styled with trailing greenery" },
   { title: "Chocomocha", category: "Wearables", price: "$210", image: grannySetAsset.url, images: [grannySetAsset.url, chocomochaWornAsset.url], alt: "Earth-toned granny square crochet top and skirt set with a cream handbag" },
   { title: "Violet Granny Shawl", category: "Wearables", price: "$140", image: purpleShawlAsset.url, alt: "Purple and pink granny square crochet shawl with fringed edges" },
   { title: "Cocoa Scallop Bikini Set", category: "Wearables", price: "$120", image: cocoaBikiniAsset.url, alt: "Cocoa brown crochet scalloped bikini set beside a cream mesh cover-up" },
