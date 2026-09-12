@@ -3,11 +3,8 @@ import { ArrowRight } from "lucide-react";
 
 import heroImage from "../assets/hero-editorial.jpg";
 import toteImage from "../assets/portfolio-tote.jpg";
-import blanketImage from "../assets/portfolio-blanket.jpg";
-import wearablesImage from "../assets/portfolio-wearables.jpg";
 import cardiganImage from "../assets/portfolio-cardigan.jpg";
 import marketBagImage from "../assets/portfolio-market-bag.jpg";
-import homeImage from "../assets/portfolio-home.jpg";
 import aboutHandsImage from "../assets/about-hands.jpg";
 import redBraletteAsset from "../assets/red-bralette.png.asset.json";
 import sandSweaterAsset from "../assets/sand-crop-sweater.png.asset.json";
@@ -38,11 +35,8 @@ export const Route = createFileRoute("/")({
 });
 
 const categories = [
-  { label: "Blankets", count: "24 pieces", image: blanketImage },
   { label: "Wearables", count: "38 pieces", image: cardiganImage },
   { label: "Bags", count: "16 pieces", image: toteImage },
-  { label: "Home", count: "22 pieces", image: homeImage },
-  { label: "Accessories", count: "31 pieces", image: wearablesImage },
   { label: "Patterns", count: "45 pieces", image: marketBagImage },
 ];
 
@@ -104,7 +98,7 @@ function HomePage() {
       {/* Category circles */}
       <section className="border-b border-border bg-secondary">
         <div className="mx-auto max-w-[1600px] px-4 py-14 sm:px-6 lg:px-10">
-          <div className="grid grid-cols-3 gap-y-10 md:grid-cols-6 md:divide-x md:divide-border">
+          <div className="mx-auto grid max-w-3xl grid-cols-3 gap-y-10 md:divide-x md:divide-border">
             {categories.map((cat) => (
               <Link
                 key={cat.label}
