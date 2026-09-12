@@ -41,7 +41,7 @@ const portfolioItems = [
     title: "Sand Lace Crop Sweater",
     category: "Wearables",
     image: sandSweaterAsset.url,
-    images: [sandSweaterAsset.url, sandFlatlayAsset.url, sandWornAsset.url],
+    images: [sandSweaterAsset.url, sandFlatlayAsset.url],
     alt: "Sand-coloured open lace crochet crop sweater styled with trailing greenery",
   },
   {
