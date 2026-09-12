@@ -12,7 +12,6 @@ import aboutHandsImage from "../assets/about-hands.jpg";
 import redBraletteAsset from "../assets/red-bralette.png.asset.json";
 import sandSweaterAsset from "../assets/sand-crop-sweater.png.asset.json";
 import sandFlatlayAsset from "../assets/sand-crop-flatlay.png.asset.json";
-import sandWornAsset from "../assets/sand-crop-worn.png.asset.json";
 import sandOpenworkSweaterAsset from "../assets/sand-openwork-sweater.png.asset.json";
 import grannySetAsset from "../assets/granny-square-set.png.asset.json";
 import purpleShawlAsset from "../assets/purple-granny-shawl.png.asset.json";
