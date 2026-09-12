@@ -3,7 +3,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import redBraletteAsset from "../assets/red-bralette.png.asset.json";
 import sandSweaterAsset from "../assets/sand-crop-sweater.png.asset.json";
 import sandFlatlayAsset from "../assets/sand-crop-flatlay.png.asset.json";
-import sandWornAsset from "../assets/sand-crop-worn.png.asset.json";
 import sandOpenworkSweaterAsset from "../assets/sand-openwork-sweater.png.asset.json";
 import grannySetAsset from "../assets/granny-square-set.png.asset.json";
 import purpleShawlAsset from "../assets/purple-granny-shawl.png.asset.json";
@@ -41,7 +40,7 @@ const portfolioItems = [
     title: "Sand Lace Crop Sweater",
     category: "Wearables",
     image: sandSweaterAsset.url,
-    images: [sandSweaterAsset.url, sandFlatlayAsset.url, sandWornAsset.url],
+    images: [sandSweaterAsset.url, sandFlatlayAsset.url],
     alt: "Sand-coloured open lace crochet crop sweater styled with trailing greenery",
   },
   {
