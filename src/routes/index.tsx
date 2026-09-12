@@ -3,11 +3,8 @@ import { ArrowRight } from "lucide-react";
 
 import heroImage from "../assets/hero-editorial.jpg";
 import toteImage from "../assets/portfolio-tote.jpg";
-import blanketImage from "../assets/portfolio-blanket.jpg";
-import wearablesImage from "../assets/portfolio-wearables.jpg";
 import cardiganImage from "../assets/portfolio-cardigan.jpg";
 import marketBagImage from "../assets/portfolio-market-bag.jpg";
-import homeImage from "../assets/portfolio-home.jpg";
 import aboutHandsImage from "../assets/about-hands.jpg";
 import redBraletteAsset from "../assets/red-bralette.png.asset.json";
 import sandSweaterAsset from "../assets/sand-crop-sweater.png.asset.json";
@@ -38,11 +35,8 @@ export const Route = createFileRoute("/")({
 });
 
 const categories = [
-  { label: "Blankets", count: "24 pieces", image: blanketImage },
   { label: "Wearables", count: "38 pieces", image: cardiganImage },
   { label: "Bags", count: "16 pieces", image: toteImage },
-  { label: "Home", count: "22 pieces", image: homeImage },
-  { label: "Accessories", count: "31 pieces", image: wearablesImage },
   { label: "Patterns", count: "45 pieces", image: marketBagImage },
 ];
 
