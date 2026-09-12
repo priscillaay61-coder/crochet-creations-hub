@@ -98,7 +98,7 @@ function HomePage() {
       {/* Category circles */}
       <section className="border-b border-border bg-secondary">
         <div className="mx-auto max-w-[1600px] px-4 py-14 sm:px-6 lg:px-10">
-          <div className="grid grid-cols-3 gap-y-10 md:grid-cols-6 md:divide-x md:divide-border">
+          <div className="mx-auto grid max-w-3xl grid-cols-3 gap-y-10 md:divide-x md:divide-border">
             {categories.map((cat) => (
               <Link
                 key={cat.label}
