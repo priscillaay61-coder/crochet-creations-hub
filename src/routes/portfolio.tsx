@@ -36,6 +36,12 @@ export const Route = createFileRoute("/portfolio")({
 
 const portfolioItems = [
   {
+    title: "Sand Openwork Sweater",
+    category: "Wearables",
+    image: sandOpenworkSweaterAsset.url,
+    alt: "Beige openwork crochet crop sweater flat-lay with a gold watch and woven bag",
+  },
+  {
     title: "Cherry Twist Handbag",
     category: "Bags",
     image: cherryBagLapAsset.url,
