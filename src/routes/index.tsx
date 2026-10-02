@@ -34,9 +34,14 @@ export const Route = createFileRoute("/")({
   component: HomePage,
 });
 
-const categories = [
+const categories: {
+  label: string;
+  count: string;
+  image: string;
+  category?: "Wearables" | "Bags" | "Home";
+}[] = [
   { label: "Wearables", count: "38 pieces", image: cardiganImage },
-  { label: "Bags", count: "3 pieces", image: cherryBagHeldAsset.url, category: "Bags" as const },
+  { label: "Bags", count: "3 pieces", image: cherryBagHeldAsset.url, category: "Bags" },
   { label: "Patterns", count: "45 pieces", image: marketBagImage },
 ];
 
