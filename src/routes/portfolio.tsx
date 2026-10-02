@@ -15,6 +15,11 @@ import chocomochaWornAsset from "../assets/chocomocha-worn.jpg.asset.json";
 import cocoaGrannyHalterAsset from "../assets/cocoa-granny-halter.png.asset.json";
 import cocoaGrannyHalterWorn1Asset from "../assets/cocoa-granny-halter-worn-1.jpeg.asset.json";
 import cocoaGrannyHalterWorn2Asset from "../assets/cocoa-granny-halter-worn-2.jpeg.asset.json";
+import cherryBagLapAsset from "../assets/cherry-bag-lap.png.asset.json";
+import cherryBagHeldAsset from "../assets/cherry-bag-held.png.asset.json";
+import meadowLaptopSleeve1Asset from "../assets/meadow-laptop-sleeve-1.png.asset.json";
+import meadowLaptopSleeve2Asset from "../assets/meadow-laptop-sleeve-2.png.asset.json";
+import marigoldLaptopSleeveAsset from "../assets/marigold-laptop-sleeve.png.asset.json";
 import { ImageSlideshow } from "@/components/image-slideshow";
 
 export const Route = createFileRoute("/portfolio")({
@@ -30,6 +35,32 @@ export const Route = createFileRoute("/portfolio")({
 });
 
 const portfolioItems = [
+  {
+    title: "Sand Openwork Sweater",
+    category: "Wearables",
+    image: sandOpenworkSweaterAsset.url,
+    alt: "Beige openwork crochet crop sweater flat-lay with a gold watch and woven bag",
+  },
+  {
+    title: "Cherry Twist Handbag",
+    category: "Bags",
+    image: cherryBagLapAsset.url,
+    images: [cherryBagLapAsset.url, cherryBagHeldAsset.url],
+    alt: "Red and cream marled crochet handbag with silver ring handles, carried on a lap",
+  },
+  {
+    title: "Meadow Laptop Sleeve",
+    category: "Bags",
+    image: meadowLaptopSleeve1Asset.url,
+    images: [meadowLaptopSleeve1Asset.url, meadowLaptopSleeve2Asset.url],
+    alt: "Two-tone green crochet laptop sleeve resting on a white duvet with trailing pothos leaves",
+  },
+  {
+    title: "Marigold Laptop Sleeve",
+    category: "Bags",
+    image: marigoldLaptopSleeveAsset.url,
+    alt: "Marigold and chocolate crochet laptop sleeve with a gold handmade tag on marble bedding",
+  },
   {
     title: "Scarlet Ruffle Bralette",
     category: "Wearables",

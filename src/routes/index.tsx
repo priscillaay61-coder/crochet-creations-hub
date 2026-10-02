@@ -2,9 +2,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 
 import heroImage from "../assets/hero-editorial.jpg";
-import toteImage from "../assets/portfolio-tote.jpg";
 import cardiganImage from "../assets/portfolio-cardigan.jpg";
 import marketBagImage from "../assets/portfolio-market-bag.jpg";
+import cherryBagHeldAsset from "../assets/cherry-bag-held.png.asset.json";
 import aboutHandsImage from "../assets/about-hands.jpg";
 import redBraletteAsset from "../assets/red-bralette.png.asset.json";
 import sandSweaterAsset from "../assets/sand-crop-sweater.png.asset.json";
@@ -36,7 +36,7 @@ export const Route = createFileRoute("/")({
 
 const categories = [
   { label: "Wearables", count: "38 pieces", image: cardiganImage },
-  { label: "Bags", count: "16 pieces", image: toteImage },
+  { label: "Bags", count: "3 pieces", image: cherryBagHeldAsset.url },
   { label: "Patterns", count: "45 pieces", image: marketBagImage },
 ];
 
