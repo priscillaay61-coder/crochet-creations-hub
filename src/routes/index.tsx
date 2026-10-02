@@ -108,6 +108,7 @@ function HomePage() {
               <Link
                 key={cat.label}
                 to="/portfolio"
+                search={{ category: cat.category }}
                 className="group flex flex-col items-center gap-4 px-2 text-center"
               >
                 <div className="h-24 w-24 overflow-hidden rounded-full bg-warm-beige sm:h-28 sm:w-28">
