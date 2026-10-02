@@ -1,4 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { z } from "zod";
 
 import redBraletteAsset from "../assets/red-bralette.png.asset.json";
 import sandSweaterAsset from "../assets/sand-crop-sweater.png.asset.json";
@@ -21,8 +22,14 @@ import meadowLaptopSleeve1Asset from "../assets/meadow-laptop-sleeve-1.png.asset
 import meadowLaptopSleeve2Asset from "../assets/meadow-laptop-sleeve-2.png.asset.json";
 import marigoldLaptopSleeveAsset from "../assets/marigold-laptop-sleeve.png.asset.json";
 import { ImageSlideshow } from "@/components/image-slideshow";
+import { cn } from "@/lib/utils";
+
+const portfolioSearchSchema = z.object({
+  category: z.enum(["Wearables", "Bags", "Home"]).optional().catch(undefined),
+});
 
 export const Route = createFileRoute("/portfolio")({
+  validateSearch: (search) => portfolioSearchSchema.parse(search),
   head: () => ({
     meta: [
       { title: "Portfolio — Cozy Stitches Couture" },
@@ -126,19 +133,50 @@ const portfolioItems = [
   },
 ];
 
+const filters = [
+  { label: "All", value: undefined },
+  { label: "Wearables", value: "Wearables" as const },
+  { label: "Bags", value: "Bags" as const },
+  { label: "Home", value: "Home" as const },
+];
+
 function PortfolioPage() {
+  const { category } = Route.useSearch();
+
+  const items = category ? portfolioItems.filter((item) => item.category === category) : portfolioItems;
+  const heading = category ?? "Portfolio";
+  const blurb = category
+    ? `${items.length} ${category.toLowerCase()} ${items.length === 1 ? "piece" : "pieces"}, made by hand and ready to ship.`
+    : "A curated gallery of finished pieces. Each one is made by hand using natural fibers and timeless stitches.";
+
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
       <div className="max-w-2xl">
         <p className="text-sm font-medium uppercase tracking-widest text-primary">The collection</p>
-        <h1 className="mt-2 font-heading text-4xl text-foreground sm:text-5xl">Portfolio</h1>
-        <p className="mt-4 text-lg text-muted-foreground">
-          A curated gallery of finished pieces. Each one is made by hand using natural fibers and timeless stitches.
-        </p>
+        <h1 className="mt-2 font-heading text-4xl text-foreground sm:text-5xl">{heading}</h1>
+        <p className="mt-4 text-lg text-muted-foreground">{blurb}</p>
+      </div>
+
+      <div className="mt-8 flex flex-wrap gap-2">
+        {filters.map((filter) => (
+          <Link
+            key={filter.label}
+            to="/portfolio"
+            search={{ category: filter.value }}
+            className={cn(
+              "border px-4 py-2 text-xs font-medium uppercase tracking-widest transition-colors",
+              category === filter.value
+                ? "border-foreground bg-foreground text-background"
+                : "border-border text-muted-foreground hover:border-foreground hover:text-foreground",
+            )}
+          >
+            {filter.label}
+          </Link>
+        ))}
       </div>
 
       <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        {portfolioItems.map((item) => (
+        {items.map((item) => (
           <article
             key={item.title}
             className="group overflow-hidden rounded-xl bg-card shadow-sm transition-shadow hover:shadow-md"
