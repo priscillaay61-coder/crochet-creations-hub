@@ -34,9 +34,14 @@ export const Route = createFileRoute("/")({
   component: HomePage,
 });
 
-const categories = [
+const categories: {
+  label: string;
+  count: string;
+  image: string;
+  category?: "Wearables" | "Bags" | "Home";
+}[] = [
   { label: "Wearables", count: "38 pieces", image: cardiganImage },
-  { label: "Bags", count: "3 pieces", image: cherryBagHeldAsset.url },
+  { label: "Bags", count: "3 pieces", image: cherryBagHeldAsset.url, category: "Bags" },
   { label: "Patterns", count: "45 pieces", image: marketBagImage },
 ];
 
@@ -103,6 +108,7 @@ function HomePage() {
               <Link
                 key={cat.label}
                 to="/portfolio"
+                search={{ category: cat.category }}
                 className="group flex flex-col items-center gap-4 px-2 text-center"
               >
                 <div className="h-24 w-24 overflow-hidden rounded-full bg-warm-beige sm:h-28 sm:w-28">
