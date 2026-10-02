@@ -146,7 +146,7 @@ function PortfolioPage() {
   const items = category ? portfolioItems.filter((item) => item.category === category) : portfolioItems;
   const heading = category ?? "Portfolio";
   const blurb = category
-    ? `${items.length} ${category.toLowerCase()} ${items.length === 1 ? "piece" : "pieces"}, made by hand and ready to ship.`
+    ? `${items.length} ${items.length === 1 ? "piece" : "pieces"}, made by hand and ready to ship.`
     : "A curated gallery of finished pieces. Each one is made by hand using natural fibers and timeless stitches.";
 
   return (
