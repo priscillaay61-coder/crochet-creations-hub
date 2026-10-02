@@ -36,6 +36,26 @@ export const Route = createFileRoute("/portfolio")({
 
 const portfolioItems = [
   {
+    title: "Cherry Twist Handbag",
+    category: "Bags",
+    image: cherryBagLapAsset.url,
+    images: [cherryBagLapAsset.url, cherryBagHeldAsset.url],
+    alt: "Red and cream marled crochet handbag with silver ring handles, carried on a lap",
+  },
+  {
+    title: "Meadow Laptop Sleeve",
+    category: "Bags",
+    image: meadowLaptopSleeve1Asset.url,
+    images: [meadowLaptopSleeve1Asset.url, meadowLaptopSleeve2Asset.url],
+    alt: "Two-tone green crochet laptop sleeve resting on a white duvet with trailing pothos leaves",
+  },
+  {
+    title: "Marigold Laptop Sleeve",
+    category: "Bags",
+    image: marigoldLaptopSleeveAsset.url,
+    alt: "Marigold and chocolate crochet laptop sleeve with a gold handmade tag on marble bedding",
+  },
+  {
     title: "Scarlet Ruffle Bralette",
     category: "Wearables",
     image: redBraletteAsset.url,

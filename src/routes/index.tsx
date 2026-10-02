@@ -36,7 +36,7 @@ export const Route = createFileRoute("/")({
 
 const categories = [
   { label: "Wearables", count: "38 pieces", image: cardiganImage },
-  { label: "Bags", count: "16 pieces", image: toteImage },
+  { label: "Bags", count: "3 pieces", image: cherryBagHeldAsset.url },
   { label: "Patterns", count: "45 pieces", image: marketBagImage },
 ];
 
