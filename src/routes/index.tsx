@@ -17,6 +17,8 @@ import crimsonHalterAsset from "../assets/crimson-halter-top.png.asset.json";
 import redShortsAsset from "../assets/red-shorts-set.jpg.asset.json";
 import redBlanketAsset from "../assets/red-scallop-blanket.png.asset.json";
 import chocomochaWornAsset from "../assets/chocomocha-worn.jpg.asset.json";
+import chocomochaWorn2Asset from "../assets/chocomocha-worn-2.png.asset.json";
+import chocomochaWorn3Asset from "../assets/chocomocha-worn-3.png.asset.json";
 import cocoaGrannyHalterAsset from "../assets/cocoa-granny-halter.png.asset.json";
 import cocoaGrannyHalterWorn1Asset from "../assets/cocoa-granny-halter-worn-1.jpeg.asset.json";
 import cocoaGrannyHalterWorn2Asset from "../assets/cocoa-granny-halter-worn-2.jpeg.asset.json";
@@ -48,7 +50,7 @@ const categories: {
 const newArrivals = [
   { title: "Scarlet Ruffle Bralette", category: "Wearables", price: "$78", image: redBraletteAsset.url, alt: "Deep red crochet ruffle bralette top with scalloped edges on linen" },
   { title: "Sand Lace Crop Sweater", category: "Wearables", price: "$165", image: sandSweaterAsset.url, images: [sandSweaterAsset.url, sandFlatlayAsset.url], alt: "Sand-coloured open lace crochet crop sweater styled with trailing greenery" },
-  { title: "Chocomocha", category: "Wearables", price: "$210", image: grannySetAsset.url, images: [grannySetAsset.url, chocomochaWornAsset.url], alt: "Earth-toned granny square crochet top and skirt set with a cream handbag" },
+  { title: "Chocomocha", category: "Wearables", price: "$210", image: grannySetAsset.url, images: [grannySetAsset.url, chocomochaWornAsset.url, chocomochaWorn2Asset.url, chocomochaWorn3Asset.url], alt: "Earth-toned granny square crochet top and skirt set with a cream handbag" },
   { title: "Violet Granny Shawl", category: "Wearables", price: "$140", image: purpleShawlAsset.url, alt: "Purple and pink granny square crochet shawl with fringed edges" },
   { title: "Cocoa Scallop Bikini Set", category: "Wearables", price: "$120", image: cocoaBikiniAsset.url, alt: "Cocoa brown crochet scalloped bikini set beside a cream mesh cover-up" },
   { title: "Crimson Halter Top", category: "Wearables", price: "$95", image: crimsonHalterAsset.url, alt: "Deep red crochet halter top with picot trim in warm sunlight" },

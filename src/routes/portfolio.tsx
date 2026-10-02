@@ -13,6 +13,8 @@ import redShortsAsset from "../assets/red-shorts-set.jpg.asset.json";
 import cocoaBraletteAsset from "../assets/cocoa-scallop-bralette.jpg.asset.json";
 import crimsonHalterAsset from "../assets/crimson-halter-top.png.asset.json";
 import chocomochaWornAsset from "../assets/chocomocha-worn.jpg.asset.json";
+import chocomochaWorn2Asset from "../assets/chocomocha-worn-2.png.asset.json";
+import chocomochaWorn3Asset from "../assets/chocomocha-worn-3.png.asset.json";
 import cocoaGrannyHalterAsset from "../assets/cocoa-granny-halter.png.asset.json";
 import cocoaGrannyHalterWorn1Asset from "../assets/cocoa-granny-halter-worn-1.jpeg.asset.json";
 import cocoaGrannyHalterWorn2Asset from "../assets/cocoa-granny-halter-worn-2.jpeg.asset.json";
@@ -85,7 +87,12 @@ const portfolioItems = [
     title: "Chocomocha",
     category: "Wearables",
     image: grannySetAsset.url,
-    images: [grannySetAsset.url, chocomochaWornAsset.url],
+    images: [
+      grannySetAsset.url,
+      chocomochaWornAsset.url,
+      chocomochaWorn2Asset.url,
+      chocomochaWorn3Asset.url,
+    ],
     alt: "Earth-toned granny square crochet top and skirt set with a cream handbag",
   },
   {
