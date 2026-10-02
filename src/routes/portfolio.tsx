@@ -1,5 +1,20 @@
 import { createFileRoute } from "@tanstack/react-router";
 
+import redBraletteAsset from "../assets/red-bralette.png.asset.json";
+import sandSweaterAsset from "../assets/sand-crop-sweater.png.asset.json";
+import sandFlatlayAsset from "../assets/sand-crop-flatlay.png.asset.json";
+import sandOpenworkSweaterAsset from "../assets/sand-openwork-sweater.png.asset.json";
+import grannySetAsset from "../assets/granny-square-set.png.asset.json";
+import purpleShawlAsset from "../assets/purple-granny-shawl.png.asset.json";
+import cocoaBikiniAsset from "../assets/cocoa-bikini-set.png.asset.json";
+import redBlanketAsset from "../assets/red-scallop-blanket.png.asset.json";
+import redShortsAsset from "../assets/red-shorts-set.jpg.asset.json";
+import cocoaBraletteAsset from "../assets/cocoa-scallop-bralette.jpg.asset.json";
+import crimsonHalterAsset from "../assets/crimson-halter-top.png.asset.json";
+import chocomochaWornAsset from "../assets/chocomocha-worn.jpg.asset.json";
+import cocoaGrannyHalterAsset from "../assets/cocoa-granny-halter.png.asset.json";
+import cocoaGrannyHalterWorn1Asset from "../assets/cocoa-granny-halter-worn-1.jpeg.asset.json";
+import cocoaGrannyHalterWorn2Asset from "../assets/cocoa-granny-halter-worn-2.jpeg.asset.json";
 import cherryBagLapAsset from "../assets/cherry-bag-lap.png.asset.json";
 import cherryBagHeldAsset from "../assets/cherry-bag-held.png.asset.json";
 import meadowLaptopSleeve1Asset from "../assets/meadow-laptop-sleeve-1.png.asset.json";
