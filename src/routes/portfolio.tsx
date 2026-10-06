@@ -34,10 +34,10 @@ export const Route = createFileRoute("/portfolio")({
   validateSearch: (search) => portfolioSearchSchema.parse(search),
   head: () => ({
     meta: [
-      { title: "Portfolio — Cozy Stitches Couture" },
-      { name: "description", content: "Browse handmade crochet blankets, bags, wearables, and home goods from Cozy Stitches Couture." },
-      { property: "og:title", content: "Portfolio — Cozy Stitches Couture" },
-      { property: "og:description", content: "Browse handmade crochet blankets, bags, wearables, and home goods from Cozy Stitches Couture." },
+      { title: "Portfolio — Cozy Twiggs Stitches" },
+      { name: "description", content: "Browse handmade crochet blankets, bags, wearables, and home goods from Cozy Twiggs Stitches." },
+      { property: "og:title", content: "Portfolio — Cozy Twiggs Stitches" },
+      { property: "og:description", content: "Browse handmade crochet blankets, bags, wearables, and home goods from Cozy Twiggs Stitches." },
     ],
   }),
   component: PortfolioPage,

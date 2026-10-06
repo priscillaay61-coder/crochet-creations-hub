@@ -27,9 +27,9 @@ import { ImageSlideshow } from "@/components/image-slideshow";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Cozy Stitches Couture — Handmade Crochet Portfolio" },
+      { title: "Cozy Twiggs Stitches — Handmade Crochet Portfolio" },
       { name: "description", content: "Discover cozy, handmade crochet pieces and patterns from a modern cottage studio." },
-      { property: "og:title", content: "Cozy Stitches Couture — Handmade Crochet Portfolio" },
+      { property: "og:title", content: "Cozy Twiggs Stitches — Handmade Crochet Portfolio" },
       { property: "og:description", content: "Discover cozy, handmade crochet pieces and patterns from a modern cottage studio." },
     ],
   }),
