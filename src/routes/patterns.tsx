@@ -4,9 +4,9 @@ import { Download } from "lucide-react";
 export const Route = createFileRoute("/patterns")({
   head: () => ({
     meta: [
-      { title: "Patterns — Cozy Stitches Couture" },
+      { title: "Patterns — Cozy Twiggs Stitches" },
       { name: "description", content: "Downloadable crochet patterns for blankets, bags, wearables, and home goods." },
-      { property: "og:title", content: "Patterns — Cozy Stitches Couture" },
+      { property: "og:title", content: "Patterns — Cozy Twiggs Stitches" },
       { property: "og:description", content: "Downloadable crochet patterns for blankets, bags, wearables, and home goods." },
     ],
   }),

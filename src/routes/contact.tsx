@@ -8,10 +8,10 @@ import { Textarea } from "@/components/ui/textarea";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Cozy Stitches Couture" },
-      { name: "description", content: "Get in touch with Cozy Stitches Couture for custom orders, pattern questions, or collaboration ideas." },
-      { property: "og:title", content: "Contact — Cozy Stitches Couture" },
-      { property: "og:description", content: "Get in touch with Cozy Stitches Couture for custom orders, pattern questions, or collaboration ideas." },
+      { title: "Contact — Cozy Twiggs Stitches" },
+      { name: "description", content: "Get in touch with Cozy Twiggs Stitches for custom orders, pattern questions, or collaboration ideas." },
+      { property: "og:title", content: "Contact — Cozy Twiggs Stitches" },
+      { property: "og:description", content: "Get in touch with Cozy Twiggs Stitches for custom orders, pattern questions, or collaboration ideas." },
     ],
   }),
   component: ContactPage,
@@ -39,10 +39,10 @@ function ContactPage() {
             <div>
               <p className="text-sm font-medium text-foreground">Email</p>
               <a
-                href="mailto:hello@cozystitchescouture.example"
+                href="mailto:hello@cozytwiggsstitches.example"
                 className="text-muted-foreground transition-colors hover:text-primary"
               >
-                hello@cozystitchescouture.example
+                hello@cozytwiggsstitches.example
               </a>
             </div>
             <div>
